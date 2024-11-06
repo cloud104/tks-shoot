@@ -12,5 +12,5 @@ steps:
   args: ['buildx', 'inspect', '--bootstrap']
   id: 'show-target-build-platforms'
 - name: "gcr.io/cloud-builders/docker"
-  args: ["buildx", "build", "--push", "--platform","linux/arm64,linux/amd64", "-t", "us-east1-docker.pkg.dev/tks-gcr-pub/tks-tshoot:$TAG_NAME", "."]
+  args: ["buildx", "build", "--push", "--platform","linux/arm64,linux/amd64", "-t", "us-east1-docker.pkg.dev/tks-gcr-pub/tks-tshoot/tks-tshoot:$TAG_NAME", "."]
   id: 'build'

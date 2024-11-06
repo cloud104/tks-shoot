@@ -1,10 +1,10 @@
 .PHONY: build-x86 build-arm64 push all
 
 # Build Vars
-IMAGENAME=nicolaka/netshoot
-VERSION=0.1
+IMAGENAME=us-east1-docker.pkg.dev/tks-gcr-pub/tks-tshoot/tks-tshoot
+VERSION=v1.0.0
 
-
+:$TAG_NAME"
 .DEFAULT_GOAL := all
 
 build-x86:
