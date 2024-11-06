@@ -1,12 +1,14 @@
 ## netshoot: a Docker + Kubernetes network trouble-shooting swiss-army container
 
-```
-                    dP            dP                           dP
-                    88            88                           88
-88d888b. .d8888b. d8888P .d8888b. 88d888b. .d8888b. .d8888b. d8888P
-88'  `88 88ooood8   88   Y8ooooo. 88'  `88 88'  `88 88'  `88   88
-88    88 88.  ...   88         88 88    88 88.  .88 88.  .88   88
-dP    dP `88888P'   dP   `88888P' dP    dP `88888P' `88888P'   dP
+```                                                                                                           
+  888888888888 88      a8P  ad88888ba                           88                                          
+       88      88    ,88'  d8"     "8b          ,d              88                                   ,d     
+       88      88  ,88"    Y8,                  88              88                                   88     
+       88      88,d88'     `Y8aaaaa,          MM88MMM ,adPPYba, 88,dPPYba,   ,adPPYba,   ,adPPYba, MM88MMM  
+       88      8888"88,      `"""""8b, aaaaaaaa 88    I8[    "" 88P'    "8a a8"     "8a a8"     "8a  88     
+       88      88P   Y8b           `8b """""""" 88     `"Y8ba,  88       88 8b       d8 8b       d8  88     
+       88      88     "88, Y8a     a8P          88,   aa    ]8I 88       88 "8a,   ,a8" "8a,   ,a8"  88,    
+       88      88       Y8b "Y88888P"           "Y888 `"YbbdP"' 88       88  `"YbbdP"'   `"YbbdP"'   "Y888   
 ```
 
 **Purpose:** Docker and Kubernetes network troubleshooting can become complex. With proper understanding of how Docker and Kubernetes networking works and the right set of tools, you can troubleshoot and resolve these networking issues. The `netshoot` container has a set of powerful networking troubleshooting tools that can be used to troubleshoot Docker networking issues. Along with these tools come a set of use-cases that show how this container can be used in real-world scenarios.
@@ -103,12 +105,15 @@ NAME                              READY   STATUS    RESTARTS   AGE
 nginx-netshoot-7f9c6957f8-kr8q6   2/2     Running   0          4m27s
 
     $ kubectl exec -it nginx-netshoot-7f9c6957f8-kr8q6 -c netshoot -- /bin/zsh
-                        dP            dP                           dP
-                        88            88                           88
-    88d888b. .d8888b. d8888P .d8888b. 88d888b. .d8888b. .d8888b. d8888P
-    88'  `88 88ooood8   88   Y8ooooo. 88'  `88 88'  `88 88'  `88   88
-    88    88 88.  ...   88         88 88    88 88.  .88 88.  .88   88
-    dP    dP `88888P'   dP   `88888P' dP    dP `88888P' `88888P'   dP
+                                                                                                            
+  888888888888 88      a8P  ad88888ba                           88                                          
+       88      88    ,88'  d8"     "8b          ,d              88                                   ,d     
+       88      88  ,88"    Y8,                  88              88                                   88     
+       88      88,d88'     `Y8aaaaa,          MM88MMM ,adPPYba, 88,dPPYba,   ,adPPYba,   ,adPPYba, MM88MMM  
+       88      8888"88,      `"""""8b, aaaaaaaa 88    I8[    "" 88P'    "8a a8"     "8a a8"     "8a  88     
+       88      88P   Y8b           `8b """""""" 88     `"Y8ba,  88       88 8b       d8 8b       d8  88     
+       88      88     "88, Y8a     a8P          88,   aa    ]8I 88       88 "8a,   ,a8" "8a,   ,a8"  88,    
+       88      88       Y8b "Y88888P"           "Y888 `"YbbdP"' 88       88  `"YbbdP"'   `"YbbdP"'   "Y888  
 
     Welcome to Netshoot! (github.com/nicolaka/netshoot)
 
